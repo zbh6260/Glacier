@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD867D4C15ADC48000BEF6E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D4B15ADC48000BEF6E8 /* UIKit.framework */; };
+		DD867D4E15ADC48000BEF6E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D4D15ADC48000BEF6E8 /* Foundation.framework */; };
+		DD867D5015ADC48000BEF6E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D4F15ADC48000BEF6E8 /* CoreGraphics.framework */; };
+		DD867D5615ADC48000BEF6E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD867D5415ADC48000BEF6E8 /* InfoPlist.strings */; };
+		DD867D5815ADC48000BEF6E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD867D5715ADC48000BEF6E8 /* main.m */; };
+		DD867D5C15ADC48000BEF6E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD867D5B15ADC48000BEF6E8 /* AppDelegate.m */; };
+		DD867D5F15ADC48000BEF6E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD867D5E15ADC48000BEF6E8 /* ViewController.m */; };
+		DD867D6215ADC48000BEF6E8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD867D6015ADC48000BEF6E8 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD867D4715ADC48000BEF6E8 /* GlacierApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlacierApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD867D4B15ADC48000BEF6E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD867D4D15ADC48000BEF6E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD867D4F15ADC48000BEF6E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD867D5315ADC48000BEF6E8 /* GlacierApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlacierApplication-Info.plist"; sourceTree = "<group>"; };
+		DD867D5515ADC48000BEF6E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD867D5715ADC48000BEF6E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD867D5915ADC48000BEF6E8 /* GlacierApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlacierApplication-Prefix.pch"; sourceTree = "<group>"; };
+		DD867D5A15ADC48000BEF6E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD867D5B15ADC48000BEF6E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD867D5D15ADC48000BEF6E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD867D5E15ADC48000BEF6E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD867D6115ADC48000BEF6E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD867D4415ADC48000BEF6E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD867D4C15ADC48000BEF6E8 /* UIKit.framework in Frameworks */,
+				DD867D4E15ADC48000BEF6E8 /* Foundation.framework in Frameworks */,
+				DD867D5015ADC48000BEF6E8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD867D3C15ADC48000BEF6E8 = {
+			isa = PBXGroup;
+			children = (
+				DD867D5115ADC48000BEF6E8 /* GlacierApplication */,
+				DD867D4A15ADC48000BEF6E8 /* Frameworks */,
+				DD867D4815ADC48000BEF6E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD867D4815ADC48000BEF6E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD867D4715ADC48000BEF6E8 /* GlacierApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD867D4A15ADC48000BEF6E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD867D4B15ADC48000BEF6E8 /* UIKit.framework */,
+				DD867D4D15ADC48000BEF6E8 /* Foundation.framework */,
+				DD867D4F15ADC48000BEF6E8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD867D5115ADC48000BEF6E8 /* GlacierApplication */ = {
+			isa = PBXGroup;
+			children = (
+				DD867D5A15ADC48000BEF6E8 /* AppDelegate.h */,
+				DD867D5B15ADC48000BEF6E8 /* AppDelegate.m */,
+				DD867D5D15ADC48000BEF6E8 /* ViewController.h */,
+				DD867D5E15ADC48000BEF6E8 /* ViewController.m */,
+				DD867D6015ADC48000BEF6E8 /* ViewController.xib */,
+				DD867D5215ADC48000BEF6E8 /* Supporting Files */,
+			);
+			path = GlacierApplication;
+			sourceTree = "<group>";
+		};
+		DD867D5215ADC48000BEF6E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD867D5315ADC48000BEF6E8 /* GlacierApplication-Info.plist */,
+				DD867D5415ADC48000BEF6E8 /* InfoPlist.strings */,
+				DD867D5715ADC48000BEF6E8 /* main.m */,
+				DD867D5915ADC48000BEF6E8 /* GlacierApplication-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD867D4615ADC48000BEF6E8 /* GlacierApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD867D6515ADC48000BEF6E8 /* Build configuration list for PBXNativeTarget "GlacierApplication" */;
+			buildPhases = (
+				DD867D4315ADC48000BEF6E8 /* Sources */,
+				DD867D4415ADC48000BEF6E8 /* Frameworks */,
+				DD867D4515ADC48000BEF6E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlacierApplication;
+			productName = GlacierApplication;
+			productReference = DD867D4715ADC48000BEF6E8 /* GlacierApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD867D3E15ADC48000BEF6E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DD867D4115ADC48000BEF6E8 /* Build configuration list for PBXProject "GlacierApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD867D3C15ADC48000BEF6E8;
+			productRefGroup = DD867D4815ADC48000BEF6E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD867D4615ADC48000BEF6E8 /* GlacierApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD867D4515ADC48000BEF6E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD867D5615ADC48000BEF6E8 /* InfoPlist.strings in Resources */,
+				DD867D6215ADC48000BEF6E8 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD867D4315ADC48000BEF6E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD867D5815ADC48000BEF6E8 /* main.m in Sources */,
+				DD867D5C15ADC48000BEF6E8 /* AppDelegate.m in Sources */,
+				DD867D5F15ADC48000BEF6E8 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD867D5415ADC48000BEF6E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD867D5515ADC48000BEF6E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD867D6015ADC48000BEF6E8 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD867D6115ADC48000BEF6E8 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD867D6315ADC48000BEF6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DD867D6415ADC48000BEF6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD867D6615ADC48000BEF6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlacierApplication/GlacierApplication-Prefix.pch";
+				INFOPLIST_FILE = "GlacierApplication/GlacierApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD867D6715ADC48000BEF6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlacierApplication/GlacierApplication-Prefix.pch";
+				INFOPLIST_FILE = "GlacierApplication/GlacierApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD867D4115ADC48000BEF6E8 /* Build configuration list for PBXProject "GlacierApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD867D6315ADC48000BEF6E8 /* Debug */,
+				DD867D6415ADC48000BEF6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD867D6515ADC48000BEF6E8 /* Build configuration list for PBXNativeTarget "GlacierApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD867D6615ADC48000BEF6E8 /* Debug */,
+				DD867D6715ADC48000BEF6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD867D3E15ADC48000BEF6E8 /* Project object */;
+}
