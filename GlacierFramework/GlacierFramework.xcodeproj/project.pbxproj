@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DD867D7715ADC58B00BEF6E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D7615ADC58B00BEF6E8 /* Foundation.framework */; };
 		DD867D7D15ADC58B00BEF6E8 /* GlacierFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = DD867D7C15ADC58B00BEF6E8 /* GlacierFramework.m */; };
+		DD87023C15AEFCC60067B66C /* GlacierFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DD867D7B15ADC58B00BEF6E8 /* GlacierFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD87023C15AEFCC60067B66C /* GlacierFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +192,7 @@
 				GCC_PREFIX_HEADER = "GlacierFramework/GlacierFramework-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -203,6 +206,7 @@
 				GCC_PREFIX_HEADER = "GlacierFramework/GlacierFramework-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -227,6 +231,7 @@
 				DD867D8215ADC58B00BEF6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
