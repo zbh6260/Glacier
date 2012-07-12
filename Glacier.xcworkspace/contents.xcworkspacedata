@@ -4,7 +4,4 @@
    <FileRef
       location = "group:GlacierApplication/GlacierApplication.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:GlacierFramework/GlacierFramework.xcodeproj">
-   </FileRef>
 </Workspace>
