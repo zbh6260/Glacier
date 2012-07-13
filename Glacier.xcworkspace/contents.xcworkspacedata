@@ -5,6 +5,6 @@
       location = "group:GlacierApplication/GlacierApplication.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GlacierApplication/../../GlacierFramework/GlacierFramework.xcodeproj">
+      location = "group:GlacierFramework/GlacierFramework.xcodeproj">
    </FileRef>
 </Workspace>

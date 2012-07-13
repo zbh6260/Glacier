@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JSONKit.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self doHttpRequest:@"http://www.baidu.com"];
 }
 
 - (void)viewDidUnload
@@ -37,6 +39,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSLog(@"%@",[request responseString]);
 }
 
 @end
