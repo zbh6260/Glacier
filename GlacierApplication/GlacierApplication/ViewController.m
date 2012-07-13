@@ -43,6 +43,7 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
+    id aa = [[request responseData] objectFromJSONData];
     NSLog(@"%@",[request responseString]);
 }
 

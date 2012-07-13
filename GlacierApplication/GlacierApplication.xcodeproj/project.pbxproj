@@ -262,6 +262,7 @@
 				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/**";
 				INFOPLIST_FILE = "GlacierApplication/GlacierApplication-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +276,7 @@
 				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/**";
 				INFOPLIST_FILE = "GlacierApplication/GlacierApplication-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
