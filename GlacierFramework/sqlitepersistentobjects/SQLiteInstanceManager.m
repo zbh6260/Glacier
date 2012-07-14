@@ -161,6 +161,16 @@ static SQLiteInstanceManager *sharedSQLiteManager = nil;
 #pragma mark -
 #pragma mark Private Methods
 
+- (void )setDatabaseFilepath:(NSString *)pDatabaseFilepath
+{
+    if (databaseFilepath) 
+    {
+        [databaseFilepath release];
+        databaseFilepath = nil;
+    }
+    databaseFilepath = [pDatabaseFilepath copy];
+}
+
 - (NSString *)databaseFilepath
 {
 	if (databaseFilepath == nil)

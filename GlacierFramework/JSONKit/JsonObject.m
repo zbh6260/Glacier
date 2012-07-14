@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 Glacier. All rights reserved.
 //
 
-#import "JsonObject.h"
+#import "JSONObject.h"
 #import "JSONKit.h"
 #if (! TARGET_OS_IPHONE)
 #import <objc/objc-runtime.h>
@@ -15,8 +15,8 @@
 #import <objc/message.h>
 #endif
 
-@implementation JsonObject
-- (NSString *) toJson //有待修改嵌套问题
+@implementation JSONObject
+- (NSString *) toJson
 {
     NSMutableDictionary * wDict = [[NSMutableDictionary alloc]init];
     
@@ -28,7 +28,7 @@
 		NSString *propName = [NSString stringWithUTF8String:property_getName(oneProp)];
 		NSString *attrs = [NSString stringWithUTF8String: property_getAttributes(oneProp)];
         
-        if ([attrs rangeOfString:@"JsonObject"].location == NSNotFound)
+        if ([attrs rangeOfString:@"JSONObject"].location == NSNotFound)
         {
             [wDict setValue:[self valueForKey:propName] forKey:propName];
         }
@@ -43,6 +43,11 @@
     return wJson;
 }
 
+- (NSData *)toJsonData
+{
+    return [[self toJson] dataUsingEncoding:NSUTF8StringEncoding];
+}
+
 - (void) parseJson:(NSString*)jsonString
 {
     
@@ -54,7 +59,7 @@
 	{
         objc_property_t oneProp = propList[i];
 		NSString *propName = [NSString stringWithUTF8String:property_getName(oneProp)];
-        [wPropDict setValue:propName forKey:@""];
+        [wPropDict setValue:@"" forKey:propName];
     }
     
     
@@ -62,6 +67,7 @@
 
     for (NSString * wKey in [wDict allKeys]) 
     {
+        NSLog(@"%@",[wPropDict valueForKey:wKey]);
         if ([wPropDict valueForKey:wKey]) 
         {
             [self setValue:[wDict valueForKey:wKey] forKey:wKey];

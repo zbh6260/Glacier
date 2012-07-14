@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		DD865D8815B1465C00817FE9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD865D8715B1465C00817FE9 /* libsqlite3.0.dylib */; };
 		DD865D9315B1838100817FE9 /* libGlacierFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD865D9215B1838100817FE9 /* libGlacierFramework.a */; };
+		DD865DCE15B1C08E00817FE9 /* LogoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD865DCC15B1C08E00817FE9 /* LogoController.m */; };
+		DD865DCF15B1C08E00817FE9 /* LogoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD865DCD15B1C08E00817FE9 /* LogoController.xib */; };
 		DD867D4C15ADC48000BEF6E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D4B15ADC48000BEF6E8 /* UIKit.framework */; };
 		DD867D4E15ADC48000BEF6E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D4D15ADC48000BEF6E8 /* Foundation.framework */; };
 		DD867D5015ADC48000BEF6E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D4F15ADC48000BEF6E8 /* CoreGraphics.framework */; };
 		DD867D5615ADC48000BEF6E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD867D5415ADC48000BEF6E8 /* InfoPlist.strings */; };
 		DD867D5815ADC48000BEF6E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD867D5715ADC48000BEF6E8 /* main.m */; };
 		DD867D5C15ADC48000BEF6E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD867D5B15ADC48000BEF6E8 /* AppDelegate.m */; };
-		DD867D5F15ADC48000BEF6E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD867D5E15ADC48000BEF6E8 /* ViewController.m */; };
-		DD867D6215ADC48000BEF6E8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD867D6015ADC48000BEF6E8 /* ViewController.xib */; };
 		DDBC22FD15AF2B4500457BB3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBC22F915AF2B4500457BB3 /* CFNetwork.framework */; };
 		DDBC22FE15AF2B4500457BB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBC22FA15AF2B4500457BB3 /* SystemConfiguration.framework */; };
 		DDBC22FF15AF2B4500457BB3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBC22FB15AF2B4500457BB3 /* MobileCoreServices.framework */; };
@@ -26,6 +26,9 @@
 /* Begin PBXFileReference section */
 		DD865D8715B1465C00817FE9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		DD865D9215B1838100817FE9 /* libGlacierFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGlacierFramework.a; path = "../../../../Library/Developer/Xcode/DerivedData/Glacier-fatqiqcwihkfdqdtwmsfantauxzy/Build/Products/Debug-iphoneos/libGlacierFramework.a"; sourceTree = "<group>"; };
+		DD865DCB15B1C08E00817FE9 /* LogoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoController.h; sourceTree = "<group>"; };
+		DD865DCC15B1C08E00817FE9 /* LogoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoController.m; sourceTree = "<group>"; };
+		DD865DCD15B1C08E00817FE9 /* LogoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoController.xib; sourceTree = "<group>"; };
 		DD867D4715ADC48000BEF6E8 /* GlacierApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlacierApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD867D4B15ADC48000BEF6E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD867D4D15ADC48000BEF6E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,9 +39,6 @@
 		DD867D5915ADC48000BEF6E8 /* GlacierApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlacierApplication-Prefix.pch"; sourceTree = "<group>"; };
 		DD867D5A15ADC48000BEF6E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD867D5B15ADC48000BEF6E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD867D5D15ADC48000BEF6E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD867D5E15ADC48000BEF6E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DD867D6115ADC48000BEF6E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		DDBC22F915AF2B4500457BB3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DDBC22FA15AF2B4500457BB3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DDBC22FB15AF2B4500457BB3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -65,6 +65,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD865DBE15B1A26B00817FE9 /* LogoController */ = {
+			isa = PBXGroup;
+			children = (
+				DD865DC715B1C07600817FE9 /* Controller */,
+				DD865DC815B1C07600817FE9 /* Model */,
+				DD865DC915B1C07600817FE9 /* View */,
+			);
+			path = LogoController;
+			sourceTree = "<group>";
+		};
+		DD865DC715B1C07600817FE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD865DCB15B1C08E00817FE9 /* LogoController.h */,
+				DD865DCC15B1C08E00817FE9 /* LogoController.m */,
+				DD865DCD15B1C08E00817FE9 /* LogoController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD865DC815B1C07600817FE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD865DC915B1C07600817FE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DD867D3C15ADC48000BEF6E8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +137,7 @@
 			children = (
 				DD867D5A15ADC48000BEF6E8 /* AppDelegate.h */,
 				DD867D5B15ADC48000BEF6E8 /* AppDelegate.m */,
-				DD867D5D15ADC48000BEF6E8 /* ViewController.h */,
-				DD867D5E15ADC48000BEF6E8 /* ViewController.m */,
-				DD867D6015ADC48000BEF6E8 /* ViewController.xib */,
+				DD865DBE15B1A26B00817FE9 /* LogoController */,
 				DD867D5215ADC48000BEF6E8 /* Supporting Files */,
 			);
 			path = GlacierApplication;
@@ -174,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD867D5615ADC48000BEF6E8 /* InfoPlist.strings in Resources */,
-				DD867D6215ADC48000BEF6E8 /* ViewController.xib in Resources */,
+				DD865DCF15B1C08E00817FE9 /* LogoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +219,7 @@
 			files = (
 				DD867D5815ADC48000BEF6E8 /* main.m in Sources */,
 				DD867D5C15ADC48000BEF6E8 /* AppDelegate.m in Sources */,
-				DD867D5F15ADC48000BEF6E8 /* ViewController.m in Sources */,
+				DD865DCE15B1C08E00817FE9 /* LogoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +232,6 @@
 				DD867D5515ADC48000BEF6E8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DD867D6015ADC48000BEF6E8 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD867D6115ADC48000BEF6E8 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -232,11 +256,15 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/** $(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**";
 			};
 			name = Debug;
 		};
@@ -252,12 +280,16 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/** $(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -304,7 +336,7 @@
 				DD867D6415ADC48000BEF6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DD867D6515ADC48000BEF6E8 /* Build configuration list for PBXNativeTarget "GlacierApplication" */ = {
 			isa = XCConfigurationList;
@@ -313,7 +345,7 @@
 				DD867D6715ADC48000BEF6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JsonObject : NSObject
+@interface JSONObject : NSObject
 - (NSString *) toJson;
+- (NSData *) toJsonData;
 - (void) parseJson:(NSString*)jsonString;
 @end

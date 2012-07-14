@@ -8,28 +8,42 @@
 
 #import "GlacierController.h"
 #import "JSONKit.h"
-#import "JsonObject.h"
+#define TIMEOUT_SECONDS 30
 
 @interface GlacierController ()
-
+-(void) doASIHttpRequest:(ASIHTTPRequest *) request;
 @end
 
 @implementation GlacierController
 
--(void) doHttpRequest:(NSString*) requestUrl
+-(void) doHttpRequest:(NSString *) requestUrl
 {
-    ASIHTTPRequest * requset = [[ASIHTTPRequest alloc]initWithURL:[NSURL URLWithString:requestUrl]];
-    [requset setDelegate:self];
-    [requset startAsynchronous];
+    ASIHTTPRequest * wRequest = [[ASIHTTPRequest alloc]initWithURL:[NSURL URLWithString:requestUrl]];
+    [self doASIHttpRequest:wRequest];
+    [wRequest release];
+}
+
+-(void) doHttpRequest:(NSString *) requestUrl postData:(NSData *)data
+{
+    ASIHTTPRequest * wRequest = [[ASIHTTPRequest alloc]initWithURL:[NSURL URLWithString:requestUrl]];
+    [wRequest setPostLength:data.length];
+    [wRequest setPostBody:[NSMutableData dataWithData:data]];
+    [self doASIHttpRequest:wRequest];
+    [wRequest release];
+}
+
+-(void) doASIHttpRequest:(ASIHTTPRequest *) request
+{
+    [request setTimeOutSeconds:TIMEOUT_SECONDS];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return  UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
 }
 
 @end
 
-
-@implementation ASIHTTPRequest(json)
--(NSObject *) responseJson
-{
-    return [[self responseData] objectFromJSONData];
-}
-@end
 

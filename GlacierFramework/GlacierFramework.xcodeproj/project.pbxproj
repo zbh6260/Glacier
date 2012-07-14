@@ -41,8 +41,8 @@
 		DD865D7F15B145D300817FE9 /* UIColor-SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD865D5F15B145D300817FE9 /* UIColor-SQLitePersistentObject.m */; };
 		DD865D8015B145D300817FE9 /* UIImage-SQLitePersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = DD865D6015B145D300817FE9 /* UIImage-SQLitePersistence.h */; };
 		DD865D8115B145D300817FE9 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = DD865D6115B145D300817FE9 /* UIImage-SQLitePersistence.m */; };
-		DD865D9015B1760400817FE9 /* JsonObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DD865D8E15B1760400817FE9 /* JsonObject.h */; settings = {ATTRIBUTES = (); }; };
-		DD865D9115B1760400817FE9 /* JsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD865D8F15B1760400817FE9 /* JsonObject.m */; };
+		DD865DDB15B1C8C800817FE9 /* JSONObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DD865DD915B1C8C800817FE9 /* JSONObject.h */; };
+		DD865DDC15B1C8C800817FE9 /* JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD865DDA15B1C8C800817FE9 /* JSONObject.m */; };
 		DD87036515AF1BBA0067B66C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD87036415AF1BBA0067B66C /* Foundation.framework */; };
 		DD87037C15AF1CE80067B66C /* GlacierController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD87037A15AF1CE80067B66C /* GlacierController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD87037D15AF1CE80067B66C /* GlacierController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87037B15AF1CE80067B66C /* GlacierController.m */; };
@@ -107,8 +107,8 @@
 		DD865D5F15B145D300817FE9 /* UIColor-SQLitePersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-SQLitePersistentObject.m"; sourceTree = "<group>"; };
 		DD865D6015B145D300817FE9 /* UIImage-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-SQLitePersistence.h"; sourceTree = "<group>"; };
 		DD865D6115B145D300817FE9 /* UIImage-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-SQLitePersistence.m"; sourceTree = "<group>"; };
-		DD865D8E15B1760400817FE9 /* JsonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonObject.h; sourceTree = "<group>"; };
-		DD865D8F15B1760400817FE9 /* JsonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonObject.m; sourceTree = "<group>"; };
+		DD865DD915B1C8C800817FE9 /* JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONObject.h; sourceTree = "<group>"; };
+		DD865DDA15B1C8C800817FE9 /* JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONObject.m; sourceTree = "<group>"; };
 		DD87036115AF1BBA0067B66C /* libGlacierFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGlacierFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD87036415AF1BBA0067B66C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD87036815AF1BBA0067B66C /* GlacierFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlacierFramework-Prefix.pch"; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 			children = (
 				DD0894D915B07AA300E3EC75 /* JSONKit.h */,
 				DD0894DA15B07AA300E3EC75 /* JSONKit.m */,
-				DD865D8E15B1760400817FE9 /* JsonObject.h */,
-				DD865D8F15B1760400817FE9 /* JsonObject.m */,
+				DD865DD915B1C8C800817FE9 /* JSONObject.h */,
+				DD865DDA15B1C8C800817FE9 /* JSONObject.m */,
 			);
 			path = JSONKit;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 				DD865D7C15B145D300817FE9 /* SQLitePersistentObject.h in Headers */,
 				DD865D7E15B145D300817FE9 /* UIColor-SQLitePersistentObject.h in Headers */,
 				DD865D8015B145D300817FE9 /* UIImage-SQLitePersistence.h in Headers */,
-				DD865D9015B1760400817FE9 /* JsonObject.h in Headers */,
+				DD865DDB15B1C8C800817FE9 /* JSONObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +435,7 @@
 				DD865D7D15B145D300817FE9 /* SQLitePersistentObject.m in Sources */,
 				DD865D7F15B145D300817FE9 /* UIColor-SQLitePersistentObject.m in Sources */,
 				DD865D8115B145D300817FE9 /* UIImage-SQLitePersistence.m in Sources */,
-				DD865D9115B1760400817FE9 /* JsonObject.m in Sources */,
+				DD865DDC15B1C8C800817FE9 /* JSONObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +526,7 @@
 				DD87036D15AF1BBA0067B66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DD87036E15AF1BBA0067B66C /* Build configuration list for PBXNativeTarget "GlacierFramework" */ = {
 			isa = XCConfigurationList;
@@ -535,7 +535,7 @@
 				DD87037015AF1BBA0067B66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
