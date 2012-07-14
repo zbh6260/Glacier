@@ -7,6 +7,8 @@
 //
 
 #import "GlacierController.h"
+#import "JSONKit.h"
+#import "JsonObject.h"
 
 @interface GlacierController ()
 
@@ -22,3 +24,12 @@
 }
 
 @end
+
+
+@implementation ASIHTTPRequest(json)
+-(NSObject *) responseJson
+{
+    return [[self responseData] objectFromJSONData];
+}
+@end
+

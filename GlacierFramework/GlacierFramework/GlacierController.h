@@ -6,9 +6,13 @@
 //  Copyright (c) 2012年 Glacier. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
 #import "ASIHTTPRequestDelegate.h"
 #import "ASIHTTPRequest.h"
 @interface GlacierController : UIViewController<ASIHTTPRequestDelegate>
 -(void) doHttpRequest:(NSString*) requestUrl;
+@end
+
+@interface ASIHTTPRequest(json)
+-(NSObject *) responseJson;
 @end

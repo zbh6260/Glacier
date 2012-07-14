@@ -8,6 +8,17 @@
 
 #import "ViewController.h"
 #import "JSONKit.h"
+#import "SQLitePersistentObject.h"
+
+@interface Test : SQLitePersistentObject
+@property (nonatomic,copy) NSString * name;
+@end
+
+@implementation Test
+
+@synthesize name;
+
+@end
 
 @interface ViewController ()
 
@@ -27,7 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self doHttpRequest:@"http://www.baidu.com"];
+    [self doHttpRequest:@"http://192.168.1.109/a.json"];
 }
 
 - (void)viewDidUnload
@@ -43,8 +54,8 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
-    id aa = [[request responseData] objectFromJSONData];
-    NSLog(@"%@",[request responseString]);
+    NSDictionary * dict = (NSDictionary *)[request responseJson];
+    NSLog(@"");
 }
 
 @end
