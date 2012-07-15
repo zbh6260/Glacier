@@ -32,12 +32,25 @@
     [wRequest release];
 }
 
+- (void)doHttpRequest:(NSString *)requestUrl postJSONData:(JSONObject *)json
+{
+    ASIHTTPRequest * wRequest = [[ASIHTTPRequest alloc]initWithURL:[NSURL URLWithString:requestUrl]];
+    NSData * wData = [json toJsonData];
+    [wRequest setPostLength:wData.length];
+    [wRequest setPostBody:[NSMutableData dataWithData:wData]];
+    [self doASIHttpRequest:wRequest];
+    [wRequest release];
+}
+
 -(void) doASIHttpRequest:(ASIHTTPRequest *) request
 {
     [request setTimeOutSeconds:TIMEOUT_SECONDS];
     [request setDelegate:self];
     [request startAsynchronous];
 }
+
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {

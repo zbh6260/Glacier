@@ -9,7 +9,9 @@
 
 #import "ASIHTTPRequestDelegate.h"
 #import "ASIHTTPRequest.h"
+#import "JSONObject.h"
 @interface GlacierController : UIViewController<ASIHTTPRequestDelegate>
 -(void) doHttpRequest:(NSString *) requestUrl;
 -(void) doHttpRequest:(NSString *) requestUrl postData:(NSData *)data;
+-(void) doHttpRequest:(NSString *) requestUrl postJSONData:(JSONObject *)json;
 @end
