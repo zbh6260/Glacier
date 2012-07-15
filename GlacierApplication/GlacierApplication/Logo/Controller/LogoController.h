@@ -8,7 +8,6 @@
 
 #import "GlacierController.h"
 
-@interface LogoController : GlacierController
-- (IBAction)onAction:(id)sender;
+@interface LogoController : GlacierController<UINavigationControllerDelegate>
 
 @end

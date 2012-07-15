@@ -15,6 +15,11 @@
 @end
 
 @implementation GlacierController
+@synthesize sharedApp;
+- (SharedApp *)sharedApp
+{
+    return [SharedApp instance];
+}
 
 -(void) doHttpRequest:(NSString *) requestUrl
 {
@@ -49,14 +54,9 @@
     [request startAsynchronous];
 }
 
-
-
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
     return  UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
 }
-
 @end
-
 

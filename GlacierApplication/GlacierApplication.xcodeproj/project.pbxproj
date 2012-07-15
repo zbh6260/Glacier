@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		588533F915B2E955009569A5 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588533F715B2E955009569A5 /* HomeController.m */; };
+		588533FA15B2E955009569A5 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588533F815B2E955009569A5 /* HomeController.xib */; };
 		DD865D8815B1465C00817FE9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD865D8715B1465C00817FE9 /* libsqlite3.0.dylib */; };
 		DD865D9315B1838100817FE9 /* libGlacierFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD865D9215B1838100817FE9 /* libGlacierFramework.a */; };
 		DD867D4C15ADC48000BEF6E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD867D4B15ADC48000BEF6E8 /* UIKit.framework */; };
@@ -25,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		588533F615B2E955009569A5 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		588533F715B2E955009569A5 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		588533F815B2E955009569A5 /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
 		DD865D8715B1465C00817FE9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		DD865D9215B1838100817FE9 /* libGlacierFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGlacierFramework.a; path = "../../../../Library/Developer/Xcode/DerivedData/Glacier-fatqiqcwihkfdqdtwmsfantauxzy/Build/Products/Debug-iphoneos/libGlacierFramework.a"; sourceTree = "<group>"; };
 		DD867D4715ADC48000BEF6E8 /* GlacierApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlacierApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +144,9 @@
 				DDE8890F15B265BB00C66888 /* LogoController.h */,
 				DDE8891015B265BB00C66888 /* LogoController.m */,
 				DDE8891115B265BB00C66888 /* LogoController.xib */,
+				588533F615B2E955009569A5 /* HomeController.h */,
+				588533F715B2E955009569A5 /* HomeController.m */,
+				588533F815B2E955009569A5 /* HomeController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 			files = (
 				DD867D5615ADC48000BEF6E8 /* InfoPlist.strings in Resources */,
 				DDE8891515B265BB00C66888 /* LogoController.xib in Resources */,
+				588533FA15B2E955009569A5 /* HomeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +235,7 @@
 				DD867D5C15ADC48000BEF6E8 /* AppDelegate.m in Sources */,
 				DDE8891415B265BB00C66888 /* LogoController.m in Sources */,
 				DDE8891815B2675100C66888 /* TestJSON.m in Sources */,
+				588533F915B2E955009569A5 /* HomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +274,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -285,7 +295,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -297,18 +307,13 @@
 		DD867D6615ADC48000BEF6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GlacierApplication/GlacierApplication-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**",
-				);
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = "GlacierApplication/GlacierApplication-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**",
-				);
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -319,18 +324,13 @@
 		DD867D6715ADC48000BEF6E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GlacierApplication/GlacierApplication-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**",
-				);
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = "GlacierApplication/GlacierApplication-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphonesimulator/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)-iphoneos/**",
-				);
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;

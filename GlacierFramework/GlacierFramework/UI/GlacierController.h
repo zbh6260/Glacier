@@ -10,7 +10,13 @@
 #import "ASIHTTPRequestDelegate.h"
 #import "ASIHTTPRequest.h"
 #import "JSONObject.h"
+#import "SharedApp.h"
+
 @interface GlacierController : UIViewController<ASIHTTPRequestDelegate>
+@property (nonatomic,readonly) SharedApp * sharedApp;
+@end
+
+@interface GlacierController(http)
 -(void) doHttpRequest:(NSString *) requestUrl;
 -(void) doHttpRequest:(NSString *) requestUrl postData:(NSData *)data;
 -(void) doHttpRequest:(NSString *) requestUrl postJSONData:(JSONObject *)json;

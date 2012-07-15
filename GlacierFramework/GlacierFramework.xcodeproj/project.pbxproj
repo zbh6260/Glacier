@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5885340015B2F650009569A5 /* GlacierController.h in Headers */ = {isa = PBXBuildFile; fileRef = 588533FE15B2F650009569A5 /* GlacierController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5885340115B2F650009569A5 /* GlacierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588533FF15B2F650009569A5 /* GlacierController.m */; };
+		5885340415B2F725009569A5 /* SharedApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5885340215B2F725009569A5 /* SharedApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5885340515B2F725009569A5 /* SharedApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5885340315B2F725009569A5 /* SharedApp.m */; };
 		DD0894DB15B07AA300E3EC75 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0894D915B07AA300E3EC75 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD0894DC15B07AA300E3EC75 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0894DA15B07AA300E3EC75 /* JSONKit.m */; };
 		DD832FBD15B263FD00FBF9DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD832FBC15B263FD00FBF9DE /* UIKit.framework */; };
@@ -45,8 +49,6 @@
 		DD865DDB15B1C8C800817FE9 /* JSONObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DD865DD915B1C8C800817FE9 /* JSONObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD865DDC15B1C8C800817FE9 /* JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD865DDA15B1C8C800817FE9 /* JSONObject.m */; };
 		DD87036515AF1BBA0067B66C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD87036415AF1BBA0067B66C /* Foundation.framework */; };
-		DD87037C15AF1CE80067B66C /* GlacierController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD87037A15AF1CE80067B66C /* GlacierController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD87037D15AF1CE80067B66C /* GlacierController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87037B15AF1CE80067B66C /* GlacierController.m */; };
 		DD8703A515AF20850067B66C /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = DD87038A15AF20420067B66C /* ASIAuthenticationDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD8703A615AF20850067B66C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87038B15AF20420067B66C /* ASIAuthenticationDialog.m */; };
 		DD8703A715AF20850067B66C /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD87038C15AF20420067B66C /* ASICacheDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,6 +75,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		588533FE15B2F650009569A5 /* GlacierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlacierController.h; sourceTree = "<group>"; };
+		588533FF15B2F650009569A5 /* GlacierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlacierController.m; sourceTree = "<group>"; };
+		5885340215B2F725009569A5 /* SharedApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedApp.h; sourceTree = "<group>"; };
+		5885340315B2F725009569A5 /* SharedApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedApp.m; sourceTree = "<group>"; };
 		DD0894D915B07AA300E3EC75 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		DD0894DA15B07AA300E3EC75 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		DD832FBC15B263FD00FBF9DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -113,8 +119,6 @@
 		DD87036115AF1BBA0067B66C /* libGlacierFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGlacierFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD87036415AF1BBA0067B66C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD87036815AF1BBA0067B66C /* GlacierFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlacierFramework-Prefix.pch"; sourceTree = "<group>"; };
-		DD87037A15AF1CE80067B66C /* GlacierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlacierController.h; sourceTree = "<group>"; };
-		DD87037B15AF1CE80067B66C /* GlacierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlacierController.m; sourceTree = "<group>"; };
 		DD87038A15AF20420067B66C /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		DD87038B15AF20420067B66C /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		DD87038C15AF20420067B66C /* ASICacheDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +158,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		588533FD15B2F640009569A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				588533FE15B2F650009569A5 /* GlacierController.h */,
+				588533FF15B2F650009569A5 /* GlacierController.m */,
+				5885340215B2F725009569A5 /* SharedApp.h */,
+				5885340315B2F725009569A5 /* SharedApp.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		DD0894D815B07AA300E3EC75 /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,8 +251,7 @@
 		DD87036615AF1BBA0067B66C /* GlacierFramework */ = {
 			isa = PBXGroup;
 			children = (
-				DD87037A15AF1CE80067B66C /* GlacierController.h */,
-				DD87037B15AF1CE80067B66C /* GlacierController.m */,
+				588533FD15B2F640009569A5 /* UI */,
 				DD87036715AF1BBA0067B66C /* Supporting Files */,
 			);
 			path = GlacierFramework;
@@ -321,7 +335,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD87037C15AF1CE80067B66C /* GlacierController.h in Headers */,
 				DD8703A515AF20850067B66C /* ASIAuthenticationDialog.h in Headers */,
 				DD8703A715AF20850067B66C /* ASICacheDelegate.h in Headers */,
 				DD8703A815AF20850067B66C /* ASIDataCompressor.h in Headers */,
@@ -354,6 +367,8 @@
 				DD865D7E15B145D300817FE9 /* UIColor-SQLitePersistentObject.h in Headers */,
 				DD865D8015B145D300817FE9 /* UIImage-SQLitePersistence.h in Headers */,
 				DD865DDB15B1C8C800817FE9 /* JSONObject.h in Headers */,
+				5885340015B2F650009569A5 /* GlacierController.h in Headers */,
+				5885340415B2F725009569A5 /* SharedApp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD87037D15AF1CE80067B66C /* GlacierController.m in Sources */,
 				DD8703A615AF20850067B66C /* ASIAuthenticationDialog.m in Sources */,
 				DD8703A915AF20850067B66C /* ASIDataCompressor.m in Sources */,
 				DD8703AB15AF20850067B66C /* ASIDataDecompressor.m in Sources */,
@@ -436,6 +450,8 @@
 				DD865D7F15B145D300817FE9 /* UIColor-SQLitePersistentObject.m in Sources */,
 				DD865D8115B145D300817FE9 /* UIImage-SQLitePersistence.m in Sources */,
 				DD865DDC15B1C8C800817FE9 /* JSONObject.m in Sources */,
+				5885340115B2F650009569A5 /* GlacierController.m in Sources */,
+				5885340515B2F725009569A5 /* SharedApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,39 +7,46 @@
 //
 
 #import "LogoController.h"
-#import "TestJSON.h"
+#import "HomeController.h"
 
 @interface LogoController ()
 
 @end
 
 @implementation LogoController
+{
+    UINavigationController * mUINavigationController;
+    NSTimer * mTimer;
+}
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    mTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(onTime) userInfo:nil repeats:false];
 }
 
-- (void)requestFinished:(ASIHTTPRequest *)request
+- (void)onTime
 {
-    TestJSON * wTest = [[TestJSON alloc]init];
-    [wTest parseJson:[request responseString]];
-    NSLog(@"%@",wTest.name);
+    HomeController * wHomeController = [[HomeController alloc]init];
+    mUINavigationController = [[UINavigationController alloc]initWithRootViewController:wHomeController];
+    mUINavigationController.delegate = self;
+    mUINavigationController.view.frame = self.view.bounds;
+    [self.view addSubview: mUINavigationController.view];
 }
 
-- (void)requestFailed:(ASIHTTPRequest *)request
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [super requestFailed:request];
-    NSLog(@"111");
+    if(self.sharedApp.currentVersion.firstVersion < 5)
+    {
+        [viewController viewWillAppear:animated];
+    }
 }
 
-- (IBAction)onAction:(id)sender 
+- (void)viewWillAppear:(BOOL)animated
 {
-    TestJSON * wTest = [[TestJSON alloc]init];
-    wTest.name = @"小小星";
-    [self doHttpRequest:@"http://localhost:8080/WebApp/MyServlet" postJSONData:wTest];
-    [wTest release];
+    [super viewWillAppear:animated];
 }
+
 @end
